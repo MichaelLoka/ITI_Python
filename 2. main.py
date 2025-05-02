@@ -1,0 +1,21 @@
+import modules as mod
+
+print("Finding the count of vowles:")
+mod.counting_vowles("This is my first python code")
+print("-----------------------------------------\nFinding i index in a sentence:")
+mod.finding_i_index("This is my second python script")
+print("-----------------------------------------\nGenerating multiplication table:")
+mod.mult_table(5)
+print("-----------------------------------------\nMario Pyramid Generation:")
+mod.mario_pyramid(4)
+print("-----------------------------------------\nSorting Array Asc & Des:")
+mod.sort_array([4,2,7,5,1])
+print("-----------------------------------------\nGenerating multiplicaiton table in lists:")
+mod.mult__table_list(6)
+print("-----------------------------------------\nEntering User Information:")
+mod.user_info("Michael", "michael@gmail.com")
+print("-----------------------------------------\nMario Pyramid Generation with Lists:")
+mod.mario_pyramid_lsit(6)
+print("-----------------------------------------\nLogging with username & password:")
+mod.user_login("michael", "pass123")
+
