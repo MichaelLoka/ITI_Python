@@ -1,7 +1,6 @@
 class Human:
     def eat(self):
         print("Human is eating.")
-        super().eat()
 
 class Mammal:
     def eat(self):
