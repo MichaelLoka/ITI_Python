@@ -1,4 +1,4 @@
-class car():
+class Car:
     def __init__ (self, name, fuelRate, velocity):
         self.name = name
         self.fuelRate = fuelRate
@@ -51,4 +51,3 @@ class car():
             print(f"Car stopped. You still have {remain_dist} to arrive")
         else:
             print("You have arrived at your destination")
-

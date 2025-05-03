@@ -1,8 +1,6 @@
-import Person as Person
-import Car as Car
-
+from Person import Person
 class Employee(Person):
-    def __inti__(self, name, money, mood, healthRate, id, car, email, salary, distanceToWork):
+    def __init__(self, name, money, mood, healthRate, id, car, email, salary, distanceToWork):
         super().__init__(name, money, mood, healthRate)
         self.id = id
         self.car = car
@@ -29,3 +27,4 @@ class Employee(Person):
         print(f"Hello {name},")
         print(f"I hope you are doing alright.")
         print(f"I'm reaching out to you to report that {msg}")
+

@@ -32,7 +32,7 @@ class Office:
 
 
     def check_lateness(self, empId, moveHour):
-        employee = self.get_employee(empId)
+        employee = self.employees[empId]
         if not employee:
             return
 
@@ -44,6 +44,8 @@ class Office:
 
     @staticmethod
     def calculate_lateness(targetHour, moveHour, distance, velocity):
+        if velocity == 0:
+            raise ValueError("Can't divide by zero")
         arrival_time = moveHour + (distance / velocity)
         return arrival_time > targetHour
 
