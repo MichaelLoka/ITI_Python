@@ -2,7 +2,8 @@ import Person as Person
 import Car as Car
 
 class Employee(Person):
-    def __inti__(self, id, car, email, salary, distanceToWork):
+    def __inti__(self, name, money, mood, healthRate, id, car, email, salary, distanceToWork):
+        super().__init__(name, money, mood, healthRate)
         self.id = id
         self.car = car
         self.email = email
@@ -10,7 +11,12 @@ class Employee(Person):
         self.distanceToWork = distanceToWork
 
     def work(self, hours):
-        self.salary = hours*25
+        if hours == 8:
+            self.mood = "happy"
+        elif hours > 8:
+            self.mood = "tired"
+        elif hours < 8:
+            self.mood = "lazy"
 
     def drive(self, distance):
         self.car.run(self.car.velocity, distance)
