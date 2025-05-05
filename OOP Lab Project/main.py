@@ -26,12 +26,5 @@ def main():
     office.hire(emp1)
     print(len(office.get_all_emp()))
 
-    #office.check_lateness(1, 8)
-    print(emp1.salary)
-
-    office.fire(1)
-    print(office.get_employees(1))
-
-
 if __name__ == "__main__":
     main()
