@@ -6,7 +6,7 @@ from Office import Office
 def main():
     car1 = Car("Toyota", 50, 100)
 
-    emp1 = Employee("Alice", 1000, "neutral", 80, 1, car1, "alice@example.com", 5000, 30)
+    emp1 = Employee("Michael", 1000, "neutral", 80, 1, car1, "michael@gmail.com", 5000, 30)
 
     emp1.sleep(6)
     print(emp1.mood)
