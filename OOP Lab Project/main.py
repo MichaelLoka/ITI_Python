@@ -5,6 +5,7 @@ from Office import Office
 
 def main():
     car1 = Car("Toyota", 50, 100)
+    car2 = Car("Ford", 60, 100)
 
     emp1 = Employee("Michael", 1000, "neutral", 80, 1, car1, "michael@gmail.com", 5000, 30)
 
